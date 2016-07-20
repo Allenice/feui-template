@@ -1,0 +1,15 @@
+.test {
+    background: resolve('app-store.png') at-2x;
+}
+
+.test2 {
+    background: resolve('sprites/add-client.png') no-repeat at-2x;
+}
+
+.test3 {
+    background: resolve('sprites/book.png') at-2x;
+}
+
+body {
+    // background-color: red;
+}

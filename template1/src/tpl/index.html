@@ -1,0 +1,12 @@
+{% extends 'base/layout.html' %}
+{% block title %} 首页 {% endblock title %}
+
+{% block main %}
+    <h1>这是首页</h1>
+    <h2>Hash: {{ stats.hash }}</h2>
+    <img src="{{assets.img}}/app-store.png" alt="">
+{% endblock %}
+
+{% block scripts %}
+    {{util.chunk('index', assets, stats)}}
+{% endblock %}

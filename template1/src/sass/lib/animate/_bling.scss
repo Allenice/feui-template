@@ -1,0 +1,139 @@
+.puffIn {
+    -webkit-animation-name: puffIn;
+    animation-name: puffIn;
+}
+.puffOut {
+    -webkit-animation-name: puffOut;
+    animation-name: puffOut;
+}
+
+.vanishIn {
+    -webkit-animation-name: vanishIn;
+    animation-name: vanishIn;
+}
+.vanishOut {
+    -webkit-animation-name: vanishOut;
+    animation-name: vanishOut;
+}
+
+@-webkit-keyframes puffIn {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2,2);
+        -webkit-filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1,1);
+        -webkit-filter: blur(0px);
+    }
+}
+@keyframes puffIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2,2);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1,1);
+        filter: blur(0px);
+    }
+}
+@-webkit-keyframes puffOut {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1,1);
+        -webkit-filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2,2);
+        -webkit-filter: blur(2px);
+    }
+}
+@keyframes puffOut {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1,1);
+        -webkit-filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2,2);
+        -webkit-filter: blur(2px);
+    }
+}
+
+@-webkit-keyframes vanishIn {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2, 2);
+        -webkit-filter: blur(90px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+}
+@keyframes vanishIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        -webkit-filter: blur(90px);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+}
+@-webkit-keyframes vanishOut {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2, 2);
+        -webkit-filter: blur(20px);
+    }
+}
+@keyframes vanishOut {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        -webkit-filter: blur(20px);
+    }
+}

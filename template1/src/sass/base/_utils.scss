@@ -1,0 +1,68 @@
+@charset 'utf-8';
+
+/**
+ * 小工具样式
+ * @author: Allenice
+ */
+
+// 隐藏
+.hide {
+    display: none !important;
+}
+
+// 显示
+.show {
+    display: block !important;
+}
+
+// 清除浮动
+.cf {
+    @include clearfix();
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+// 大写
+.upper {
+    text-transform: uppercase;
+}
+
+// 首字母大写
+.capitalize {
+    text-transform: capitalize;
+}
+
+// 超出显示省略号
+.ellipsis {
+    @include ellipsis();
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+// 高度 100%
+.full-height {
+    height: 100%;
+}
+
+// 两列等高布局
+.two-column {
+    padding-bottom: 9999px !important;
+    margin-bottom: -9999px !important;
+    overflow: hidden;
+}

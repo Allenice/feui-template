@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * app
+ */
+/**
+ * 公共样式
+ */
+/**
+ * 小工具样式
+ * @author: Allenice
+ */
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.cf::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.upper {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.full-height {
+  height: 100%; }
+
+.two-column {
+  padding-bottom: 9999px !important;
+  margin-bottom: -9999px !important;
+  overflow: hidden; }
+
+.test {
+  background: url('../../../../src/img/app-store.png'); }
+
+.test2 {
+  background: url('../../../../src/img/sprites/add-client.png') no-repeat; }
+
+.test3 {
+  background: url('../../../../src/img/sprites/book.png'); }
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+  .test{
+    background: url('../../../../src/img/app-store@2x.png'); } }
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+  .test2{
+    background: url('../../../../src/img/sprites/add-client@2x.png') no-repeat; } }
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+  .test3{
+    background: url('../../../../src/img/sprites/book@2x.png'); } }
+
+/*# sourceMappingURL=app.css.map */

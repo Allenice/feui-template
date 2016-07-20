@@ -1,0 +1,4 @@
+{# 输出页面 js #}
+{% macro chunk(name, assets, stats) %}
+    <script src="{{assets.js}}/{{stats.assetsByChunkName[name][0]}}"></script>
+{% endmacro %}

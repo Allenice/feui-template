@@ -1,0 +1,19 @@
+{% import "./util.html" as util %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} title {% endblock title %}</title>
+    <link rel="stylesheet" href="{{assets.css}}/app.css?hash={{stats.hash}}">
+</head>
+<body>
+    {% include "../include/header.html" %}
+    {% block main %}
+    <h1>main</h1>
+    {% endblock main %}
+    {% include "../include/footer.html" %}
+    {% include "../include/scripts.html" %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>
